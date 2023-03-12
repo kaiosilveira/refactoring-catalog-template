@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "refactoring-catalog-template",
   "version": "1.0.0",
   "main": "index.js",
@@ -6,7 +7,7 @@
   "author": "Kaio Silveira <silveira.kaio@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest --passWithNoTests"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests"
   },
   "devDependencies": {
     "jest": "^29.0.3"
