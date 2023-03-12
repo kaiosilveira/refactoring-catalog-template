@@ -5,6 +5,9 @@
   "repository": "https://github.com/kaiosilveira/refactoring-catalog-template.git",
   "author": "Kaio Silveira <silveira.kaio@icloud.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
   "devDependencies": {
     "jest": "^29.0.3"
   }
