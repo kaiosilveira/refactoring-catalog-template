@@ -92,8 +92,9 @@ describe('createCommitHistoryTableRow', () => {
     msg: 'docs: update CI badge for the template'
   };
 
+  const firstSevenDigitsOfCommitSHA = cmtData.sha.slice(0, 7);
   const cmtURL = `https://github.com/kaiosilveira/${repoName}/commit/${cmtData.sha}`;
 
   expect(createCommitHistoryTableRow(repoName, cmtData))
-    .toEqual(`| [${cmtData.sha}](${cmtURL}) | ${cmtData.msg} |`);
+    .toEqual(`| [${firstSevenDigitsOfCommitSHA}](${cmtURL}) | ${cmtData.msg} |`);
 });
