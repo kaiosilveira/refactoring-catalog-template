@@ -56,13 +56,14 @@ describe('createCommitHistoryTableHeaders', () => {
 });
 
 describe('createCommitHistoryTableRow', () => {
+  const repoName = 'encapsulate-record-refactoring';
   const cmtData = {
     sha: 'a055f7be4a4fe35ed1dc7d0afeb1e34add6882b9',
     msg: 'docs: update CI badge for the template'
   };
 
-  expect(createCommitHistoryTableRow(cmtData))
-    .toEqual(
-      '| a055f7be4a4fe35ed1dc7d0afeb1e34add6882b9 | docs: update CI badge for the template |'
-    );
+  const cmtURL = `https://github.com/kaiosilveira/${repoName}/commit/${cmtData.sha}`;
+
+  expect(createCommitHistoryTableRow(repoName, cmtData))
+    .toEqual(`| [${cmtData.sha}](${cmtURL}) | ${cmtData.msg} |`);
 });

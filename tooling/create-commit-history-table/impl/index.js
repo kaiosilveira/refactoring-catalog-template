@@ -23,6 +23,7 @@ export function createCommitHistoryTableHeaders() {
   ].join('');
 }
 
-export function createCommitHistoryTableRow({ sha, msg }) {
-  return `| ${sha} | ${msg} |`;
+export function createCommitHistoryTableRow(repoName, { sha, msg }) {
+  const cmtURL = `https://github.com/kaiosilveira/${repoName}/commit/${sha}`;
+  return `| [${sha}](${cmtURL}) | ${msg} |`;
 }
