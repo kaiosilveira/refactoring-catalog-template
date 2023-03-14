@@ -8,7 +8,7 @@ export async function fetchReversedOneLineCommitHistory({ exec }) {
           const firstSpaceIdx = commit.indexOf(' ');
           const [sha, msg] = [commit.substring(0, firstSpaceIdx), commit.substring(firstSpaceIdx + 1)];
           return { sha, msg };
-        });
+        }).filter(({ sha }) => sha !== '');
 
         resolve(commits);
       }
