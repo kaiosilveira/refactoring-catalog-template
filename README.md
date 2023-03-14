@@ -6,10 +6,17 @@ This is a quick template to help me get a new refactoring repo going.
 
 ## Things to do after creating a repo off of this template
 
-- Set the text at the project description in GitHub to: "Working example with detailed commit history on the "[REPOSITORY_NAME]" refactoring based on Fowler's "Refactoring" book"
-- Replace `[REPOSITORY_NAME]` by the actual repository name
-- Replace the lorem ipsum text sections below with actual text
-- CI badge:
+1. Replace `[REPOSITORY_NAME]` by the actual repository name
+
+2. Set the text at the project description in GitHub to
+
+```
+Working example with detailed commit history on the "[REPOSITORY_NAME]" refactoring based on Fowler's "Refactoring" book"
+```
+
+3. Replace the lorem ipsum text sections below with actual text
+
+4. Configure the CI badge:
 
 ```
 [![CI](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml/badge.svg)](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml)
@@ -23,10 +30,10 @@ This is a quick template to help me get a new refactoring repo going.
 git log --patch --reverse > data.diff
 ```
 
-- Extract commit signature and description data to create the commit history table:
+- Generates the commit history table for the last section, including the correct links
 
 ```bash
-git log --oneline --reverse --no-abbrev-commit
+yarn template:generate-cmt-table [REPOSITORY_NAME]
 ```
 
 ---
