@@ -22,3 +22,7 @@ export function createCommitHistoryTableHeaders() {
     '| ---------- | ------- |'
   ].join('');
 }
+
+export function createCommitHistoryTableRow({ sha, msg }) {
+  return `| ${sha} | ${msg} |`;
+}

@@ -1,5 +1,9 @@
 import { jest, expect } from '@jest/globals';
-import { fetchReversedOneLineCommitHistory, createCommitHistoryTableHeaders } from '.';
+import {
+  fetchReversedOneLineCommitHistory,
+  createCommitHistoryTableHeaders,
+  createCommitHistoryTableRow
+} from '.';
 
 describe('fetchReversedOneLineCommitHistory', () => {
   it('should throw an exception in case of failure', async () => {
@@ -49,4 +53,16 @@ describe('createCommitHistoryTableHeaders', () => {
         '| ---------- | ------- |'
       ].join(''));
   });
+});
+
+describe('createCommitHistoryTableRow', () => {
+  const cmtData = {
+    sha: 'a055f7be4a4fe35ed1dc7d0afeb1e34add6882b9',
+    msg: 'docs: update CI badge for the template'
+  };
+
+  expect(createCommitHistoryTableRow(cmtData))
+    .toEqual(
+      '| a055f7be4a4fe35ed1dc7d0afeb1e34add6882b9 | docs: update CI badge for the template |'
+    );
 });
