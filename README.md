@@ -26,11 +26,10 @@ git log --patch --reverse > data.diff
 - Extract commit signature and description data to create the commit history table:
 
 ```bash
-git log --oneline --reverse
+git log --oneline --reverse --no-abbrev-commit
 ```
 
 ---
-
 
 ℹ️ _This repository is part of my Refactoring catalog based on Fowler's book with the same title. Please see [kaiosilveira/refactoring](https://github.com/kaiosilveira/refactoring) for more details._
 
