@@ -15,3 +15,10 @@ export async function fetchReversedOneLineCommitHistory({ exec }) {
     });
   });
 }
+
+export function createCommitHistoryTableHeaders() {
+  return [
+    '| Commit SHA | Message |',
+    '| ---------- | ------- |'
+  ].join('');
+}
