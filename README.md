@@ -1,3 +1,5 @@
+[![Continuous Integration](https://github.com/kaiosilveira/refactoring-catalog-template/actions/workflows/ci.yml/badge.svg)](https://github.com/kaiosilveira/refactoring-catalog-template/actions/workflows/ci.yml)
+
 # Refactoring catalog repository template
 
 This is a quick template to help me get a new refactoring repo going.
@@ -7,6 +9,11 @@ This is a quick template to help me get a new refactoring repo going.
 - Set the text at the project description in GitHub to: "Working example with detailed commit history on the "[REPOSITORY_NAME]" refactoring based on Fowler's "Refactoring" book"
 - Replace `[REPOSITORY_NAME]` by the actual repository name
 - Replace the lorem ipsum text sections below with actual text
+- CI badge:
+
+```
+[![CI](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml/badge.svg)](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml)
+```
 
 ## Useful commands
 
@@ -24,7 +31,6 @@ git log --oneline --reverse
 
 ---
 
-[![CI](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml/badge.svg)](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml)
 
 ℹ️ _This repository is part of my Refactoring catalog based on Fowler's book with the same title. Please see [kaiosilveira/refactoring](https://github.com/kaiosilveira/refactoring) for more details._
 
