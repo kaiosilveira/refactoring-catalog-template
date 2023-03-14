@@ -20,7 +20,7 @@ export function createCommitHistoryTableHeaders() {
   return [
     '| Commit SHA | Message |',
     '| ---------- | ------- |'
-  ].join('');
+  ].join('\n');
 }
 
 export function createCommitHistoryTableRow(repoName, { sha, msg }) {

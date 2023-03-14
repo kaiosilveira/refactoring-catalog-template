@@ -51,7 +51,7 @@ describe('createCommitHistoryTableHeaders', () => {
       .toEqual([
         '| Commit SHA | Message |',
         '| ---------- | ------- |'
-      ].join(''));
+      ].join('\n'));
   });
 });
 
