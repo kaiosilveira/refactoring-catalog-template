@@ -54,7 +54,7 @@ git log --patch --reverse > data.diff
 <td>
 
 ```javascript
-result = initial.colde;
+result = initial.code;
 ```
 
 </td>
