@@ -8,18 +8,14 @@ jobs:
   Integration:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.17.1]
-
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 18.17.1
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18.17.1
           cache: 'npm'
 
       - name: Generate .npmrc
