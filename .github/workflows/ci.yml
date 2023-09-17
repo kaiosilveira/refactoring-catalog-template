@@ -21,6 +21,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Generate .npmrc
+        run: |
+          echo "registry=https://registry.npmjs.org/" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
+
       - name: Install dependencies
         run: npm install
 
