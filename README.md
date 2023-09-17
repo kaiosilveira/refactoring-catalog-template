@@ -33,7 +33,7 @@ git log --patch --reverse > data.diff
 - Generates the commit history table for the last section, including the correct links
 
 ```bash
-yarn template:generate-cmt-table [REPOSITORY_NAME]
+ node node_modules/@kaiosilveira/refactoring-catalog-cli/dist . [REPOSITORY_NAME]
 ```
 
 ---
@@ -42,27 +42,43 @@ yarn template:generate-cmt-table [REPOSITORY_NAME]
 
 # Refactoring name
 
+<table>
+<thead>
+<th>Before</th>
+<th>After</th>
+</thead>
+<tbody>
+<tr>
+<td>
+
+```javascript
+result = initial.colde;
+```
+
+</td>
+
+<td>
+
+```javascript
+result = newCode();
+
+function newCode() {
+  return 'new code';
+}
+```
+
+</td>
+</tr>
+</tbody>
+</table>
+
+**Inverse of: [Another refactoring](https://github.com/kaiosilveira/refactoring)**
+
 **Refactoring introduction and motivation** dolore sunt deserunt proident enim excepteur et cillum duis velit dolor. Aute proident laborum officia velit culpa enim occaecat officia sunt aute labore id anim minim. Eu minim esse eiusmod enim nulla Lorem. Enim velit in minim anim anim ad duis aute ipsum voluptate do nulla. Ad tempor sint dolore et ullamco aute nulla irure sunt commodo nulla aliquip.
 
 ## Working example
 
 **Working example general explanation** proident reprehenderit mollit non voluptate ea aliquip ad ipsum anim veniam non nostrud. Cupidatat labore occaecat labore veniam incididunt pariatur elit officia. Aute nisi in nulla non dolor ullamco ut dolore do irure sit nulla incididunt enim. Cupidatat aliquip minim culpa enim. Fugiat occaecat qui nostrud nostrud eu exercitation Lorem pariatur fugiat ea consectetur pariatur irure. Officia dolore veniam duis duis eu eiusmod cupidatat laboris duis ad proident adipisicing. Minim veniam consectetur ut deserunt fugiat id incididunt reprehenderit.
-
-**Before**
-
-```javascript
-function functionBeforeBeingRefactored(arg1, arg2) {}
-```
-
-And after going through the refactoring steps detailed in the next section, we have the following code as a result:
-
-**After**
-
-```javascript
-function functionAfterBeingRefactored(...args) {}
-```
-
-**Refactoring considerations and final thoughts** id culpa mollit sit laborum aute dolore sint id nisi. Sunt voluptate in nostrud esse occaecat adipisicing ullamco. Ut nisi quis eu aliquip ut est commodo labore ad aute aliquip.
 
 ### Test suite
 
