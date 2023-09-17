@@ -42,6 +42,8 @@ git log --patch --reverse > data.diff
 
 # Refactoring name
 
+**Formerly: Old name**
+
 <table>
 <thead>
 <th>Before</th>
