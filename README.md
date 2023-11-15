@@ -6,12 +6,12 @@ This is a quick template to help me get a new refactoring repo going.
 
 ## Things to do after creating a repo off of this template
 
-1. Replace `[REPOSITORY_NAME]` by the actual repository name
+1. Replace `[REPOSITORY_NAME]` with the actual repository name
 
-2. Set the text at the project description in GitHub to
+2. Set the text in the project description in GitHub to
 
 ```
-Working example with detailed commit history on the "[REPOSITORY_NAME]" refactoring based on Fowler's "Refactoring" book"
+Working example with detailed commit history on the "[REPOSITORY_NAME]" refactoring based on Fowler's "Refactoring" book
 ```
 
 3. Replace the lorem ipsum text sections below with actual text
