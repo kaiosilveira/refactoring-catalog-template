@@ -22,6 +22,10 @@ Working example with detailed commit history on the "[REPOSITORY_NAME]" refactor
 [![Continuous Integration](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml/badge.svg)](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml)
 ```
 
+5. Add https://github.com/kaiosilveira/refactoring as the website link
+
+6. Add labels: javascript, refactoring, [REPOSITORY_NAME]
+
 ## Useful commands
 
 - Generate a patch diff and write the result to a file:
