@@ -19,7 +19,7 @@ Working example with detailed commit history on the "[REPOSITORY_NAME]" refactor
 4. Configure the CI badge:
 
 ```
-[![Continous Integration](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml/badge.svg)](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml)
+[![Continuous Integration](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml/badge.svg)](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml)
 ```
 
 ## Useful commands
