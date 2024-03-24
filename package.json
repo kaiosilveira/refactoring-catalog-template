@@ -9,7 +9,7 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest /src --passWithNoTests",
     "test:tooling": "NODE_OPTIONS=--experimental-vm-modules jest /tooling --passWithNoTests",
-    "template:generate-cmt-table": "node ./tooling/create-commit-history-table/index.js"
+    "template:generate-cmt-table": "npx @kaiosilveira/refactoring-catalog-cli generate-cmt-table"
   },
   "devDependencies": {
     "jest": "^29.0.3"
