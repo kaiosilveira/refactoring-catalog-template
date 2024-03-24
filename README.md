@@ -36,10 +36,10 @@ Working example with detailed commit history on the "[REPOSITORY_NAME]" refactor
 git log --patch --reverse > data.diff
 ```
 
-- Generates the commit history table for the last section, including the correct links
+- To generate the commit history table for the last section, including the correct links:
 
 ```bash
- yarn tools:generate-cmt-table
+yarn tools:cli generate-cmt-table -r <repository_name>
 ```
 
 ---
