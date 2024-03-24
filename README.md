@@ -39,7 +39,7 @@ git log --patch --reverse > data.diff
 - Generates the commit history table for the last section, including the correct links
 
 ```bash
- node node_modules/@kaiosilveira/refactoring-catalog-cli/dist [REPOSITORY_NAME]
+ yarn tools:generate-cmt-table
 ```
 
 ---
