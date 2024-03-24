@@ -9,12 +9,12 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest /src --passWithNoTests",
     "test:tooling": "NODE_OPTIONS=--experimental-vm-modules jest /tooling --passWithNoTests",
-    "tools:generate-cmt-table": "npx @kaiosilveira/refactoring-catalog-cli"
+    "tools:cli": "npx @kaiosilveira/refactoring-catalog-cli"
   },
   "devDependencies": {
     "jest": "^29.0.3"
   },
   "dependencies": {
-    "@kaiosilveira/refactoring-catalog-cli": "^0.0.22"
+    "@kaiosilveira/refactoring-catalog-cli": "^0.1.27"
   }
 }
