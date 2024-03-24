@@ -26,6 +26,8 @@ Working example with detailed commit history on the "[REPOSITORY_NAME]" refactor
 
 6. Add labels: javascript, refactoring, [REPOSITORY_NAME]
 
+7. Update repo name and URL at `package.json`
+
 ## Useful commands
 
 - Generate a patch diff and write the result to a file:
