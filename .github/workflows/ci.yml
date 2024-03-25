@@ -26,8 +26,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tooling tests
-        run: npm run test:tooling
-
       - name: Run unit tests
         run: npm run test

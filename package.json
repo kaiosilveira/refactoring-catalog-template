@@ -8,7 +8,6 @@
   "license": "MIT",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest /src --passWithNoTests",
-    "test:tooling": "NODE_OPTIONS=--experimental-vm-modules jest /tooling --passWithNoTests",
     "tools:cli": "npx @kaiosilveira/refactoring-catalog-cli"
   },
   "devDependencies": {
