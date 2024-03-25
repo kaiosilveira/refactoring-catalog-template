@@ -11,9 +11,7 @@
     "tools:cli": "npx @kaiosilveira/refactoring-catalog-cli"
   },
   "devDependencies": {
-    "jest": "^29.0.3"
-  },
-  "dependencies": {
+    "jest": "^29.0.3",
     "@kaiosilveira/refactoring-catalog-cli": "^0.1.27"
   }
 }
