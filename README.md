@@ -39,7 +39,7 @@ git log --patch --reverse > data.diff
 - To generate the commit history table for the last section, including the correct links:
 
 ```bash
-yarn tools:cli generate-cmt-table -r <repository_name>
+yarn tools:cli generate-cmt-table -r [REPOSITORY_NAME]
 ```
 
 ---
