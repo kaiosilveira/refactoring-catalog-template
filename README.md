@@ -46,6 +46,8 @@ yarn tools:cli generate-cmt-table -r [REPOSITORY_NAME]
 
 ℹ️ _This repository is part of my Refactoring catalog based on Fowler's book with the same title. Please see [kaiosilveira/refactoring](https://github.com/kaiosilveira/refactoring) for more details._
 
+---
+
 # Refactoring name
 
 **Formerly: Old name**
