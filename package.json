@@ -12,6 +12,6 @@
   },
   "devDependencies": {
     "jest": "^29.0.3",
-    "@kaiosilveira/refactoring-catalog-cli": "0.3.31"
+    "@kaiosilveira/refactoring-catalog-cli": "0.7.34"
   }
 }
