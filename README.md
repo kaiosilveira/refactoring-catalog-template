@@ -6,34 +6,23 @@ This is a quick template to help me get a new refactoring repo going.
 
 ## Things to do after creating a repo off of this template
 
-1. Replace `[REPOSITORY_NAME]` with the actual repository name
+1. Run `yarn tools:cli prepare-repository -r <repo_name>`. It will:
 
-2. Set the text in the project description in GitHub to
+- Update the `README.md` file with the actual repository name, CI badge, and commit history link
+- Update `package.json` with the repository's name and remote URL
+- Update the repo's homepage on GitHub with:
+  - A description
+  - A website link to https://github.com/kaiosilveira/refactoring
+  - The following labels: javascript, refactoring, [REPOSITORY_NAME]
 
-```
-Working example with detailed commit history on the "[REPOSITORY_NAME]" refactoring based on Fowler's "Refactoring" book
-```
-
-3. Replace the lorem ipsum text sections below with actual text
-
-4. Configure the CI badge:
-
-```
-[![Continuous Integration](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml/badge.svg)](https://github.com/kaiosilveira/[REPOSITORY_NAME]/actions/workflows/ci.yml)
-```
-
-5. Add https://github.com/kaiosilveira/refactoring as the website link
-
-6. Add labels: javascript, refactoring, [REPOSITORY_NAME]
-
-7. Update repo name and URL at `package.json`
+2. Replace the lorem ipsum text sections below with actual text
 
 ## Useful commands
 
-- Generate a patch diff and write the result to a file:
+- Generate markdown containing a diff with patch information based on a range of commits:
 
 ```bash
-git log --patch --reverse > data.diff
+yarn tools:cli generate-diff -f <first_commit_sha> -l <last_commit_sha>
 ```
 
 - To generate the commit history table for the last section, including the correct links:
