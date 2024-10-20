@@ -6,7 +6,7 @@ This is a quick template to help me get a new refactoring repo going.
 
 ## Things to do after creating a repo off of this template
 
-1. Run `yarn tools:cli prepare-repository -r <repo_name>`. It will:
+1. Run `GITHUB_TOKEN=$(gh auth token) yarn tools:cli prepare-repository -r <repo_name>`. It will:
 
 - Update the `README.md` file with the actual repository name, CI badge, and commit history link
 - Update `package.json` with the repository's name and remote URL
